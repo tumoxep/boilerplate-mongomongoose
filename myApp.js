@@ -84,9 +84,7 @@ const queryChain = (done) => {
     .sort('name')
     .limit(2)
     .select('-age')
-    .exec(function(err, data) {
-      return done(err, data);
-    });
+    .exec(done);
 };
 
 /** **Well Done !!**
